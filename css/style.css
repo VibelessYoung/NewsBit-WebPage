@@ -1,3 +1,5 @@
+/* FONTS */
+
 .pt-sans-regular {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -21,6 +23,8 @@
   font-weight: 700;
   font-style: italic;
 }
+
+/* MAIN STYLE */
 
 *{
   margin: 0 auto;
@@ -158,6 +162,8 @@ a:hover>b {
     color: #F9B500;
 }
 
+/* HEADER STYLE */
+
 .header-logo{
     padding: 30px;
     float: left;
@@ -181,6 +187,8 @@ a:hover>b {
     border: none;
     line-height: 80px;
 }
+
+/* APP STYLE */
 
 .app{
   width: 1200px;
@@ -377,6 +385,8 @@ li{
   font-style: 14px;
 }
 
+/*RECENT NEWS STYLE */
+
 .left {
   width: calc(50% - 25px);
   margin-right: 25px;
@@ -408,6 +418,8 @@ li{
   font-weight: bold;
   font-style: 14px;
 }
+
+/* ASIDE STYLE */
 
 .sidebar{
   float: right;
@@ -512,6 +524,8 @@ li{
   margin-top: 15px;
 }
 
+/* FOOTER STYLE */
+
 .footer {
   width: 100%;
   clear: both;
@@ -593,6 +607,8 @@ li{
   list-style: none;
   padding-top: 15px;
 }
+
+/* RESPONSIVE */
 
 @media (max-width:1199.98px){
   .app{
