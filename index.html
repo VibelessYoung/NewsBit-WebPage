@@ -32,33 +32,46 @@
 
         <!-- MENU -->
 
-        <header>
+    <header class="modern-header">
 
-            <nav class="header">
+  <nav class="nav-container">
 
-                <img src="images/logo-black.png" alt="" class="header-logo">
+    <!-- Logo -->
 
-                <button class="header-menu-burger" onclick="showMenu()"><i class="fas fa-bars"></i></button>
+    <div class="logo">
 
-                <ul class="header-menu" id="menu">
+      <img src="images/logo-white.png" alt="NewsBit Logo">
 
-                    <li class="header-menu-item"><a href="#" class="header-menu-item-link">NEWS</a></li>
+    </div>
 
-                    <li class="header-menu-item"><a href="#" class="header-menu-item-link">GUIDES & ANALYTICS</a></li>
+    <!-- Menu -->
 
-                    <li class="header-menu-item"><a href="#" class="header-menu-item-link">EVENTS</a></li>
+    <ul class="nav-menu" id="navMenu">
 
-                    <li class="header-menu-item"><a href="#" class="header-menu-item-link">EXPLAINED</a></li>
+      <li><a href="#">News</a></li>
 
-                    <li class="header-menu-item"><a href="#" class="header-menu-item-link">ICON CLAENDER</a></li>
-                    
-                </ul>
+      <li><a href="#">Guides & Analytics</a></li>
 
-                <section class="clear-fix"></section>
+      <li><a href="#">Events</a></li>
 
-            </nav>
+      <li><a href="#">Explained</a></li>
 
-        </header>
+      <li><a href="#">Icon Calendar</a></li>
+
+    </ul>
+
+    <!-- Burger -->
+
+    <button class="burger" onclick="showMenu()">
+
+      <i class="fas fa-bars"></i>
+
+    </button>
+
+  </nav>
+
+</header>
+
 
         <!-- GALLERY -->
 
@@ -728,12 +741,7 @@
     <script>
 
         function showMenu() {
-            var menu = document.getElementById("menu");
-            if (menu.className === "header-menu") {
-                menu.className += " show";
-            } else {
-                menu.className = "header-menu";
-            }
+            document.getElementById("navMenu").classList.toggle("show");
         }
 
         ScrollReveal().reveal('.header', {
